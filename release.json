@@ -1,0 +1,87 @@
+{
+  "version": "0.3.0",
+  "url": "https://github.com/nightshift-app/releases/releases/tag/v0.3.0",
+  "publishedAt": "2026-11-06T12:24:09.000Z",
+  "assets": [
+    {
+      "name": "latest-linux.yml",
+      "url": "https://github.com/nightshift-app/releases/releases/download/v0.3.0/latest-linux.yml",
+      "size": 543
+    },
+    {
+      "name": "latest-mac.yml",
+      "url": "https://github.com/nightshift-app/releases/releases/download/v0.3.0/latest-mac.yml",
+      "size": 688
+    },
+    {
+      "name": "latest.yml",
+      "url": "https://github.com/nightshift-app/releases/releases/download/v0.3.0/latest.yml",
+      "size": 345
+    },
+    {
+      "name": "Nightshift-0.3.0-amd64.deb",
+      "url": "https://github.com/nightshift-app/releases/releases/download/v0.3.0/Nightshift-0.3.0-amd64.deb",
+      "size": 158767924
+    },
+    {
+      "name": "Nightshift-0.3.0-arm64.dmg",
+      "url": "https://github.com/nightshift-app/releases/releases/download/v0.3.0/Nightshift-0.3.0-arm64.dmg",
+      "size": 187791537
+    },
+    {
+      "name": "Nightshift-0.3.0-arm64.dmg.blockmap",
+      "url": "https://github.com/nightshift-app/releases/releases/download/v0.3.0/Nightshift-0.3.0-arm64.dmg.blockmap",
+      "size": 196976
+    },
+    {
+      "name": "Nightshift-0.3.0-arm64.zip",
+      "url": "https://github.com/nightshift-app/releases/releases/download/v0.3.0/Nightshift-0.3.0-arm64.zip",
+      "size": 180950511
+    },
+    {
+      "name": "Nightshift-0.3.0-arm64.zip.blockmap",
+      "url": "https://github.com/nightshift-app/releases/releases/download/v0.3.0/Nightshift-0.3.0-arm64.zip.blockmap",
+      "size": 191136
+    },
+    {
+      "name": "Nightshift-0.3.0-x64.dmg",
+      "url": "https://github.com/nightshift-app/releases/releases/download/v0.3.0/Nightshift-0.3.0-x64.dmg",
+      "size": 193677439
+    },
+    {
+      "name": "Nightshift-0.3.0-x64.dmg.blockmap",
+      "url": "https://github.com/nightshift-app/releases/releases/download/v0.3.0/Nightshift-0.3.0-x64.dmg.blockmap",
+      "size": 204628
+    },
+    {
+      "name": "Nightshift-0.3.0-x64.exe",
+      "url": "https://github.com/nightshift-app/releases/releases/download/v0.3.0/Nightshift-0.3.0-x64.exe",
+      "size": 166951853
+    },
+    {
+      "name": "Nightshift-0.3.0-x64.exe.blockmap",
+      "url": "https://github.com/nightshift-app/releases/releases/download/v0.3.0/Nightshift-0.3.0-x64.exe.blockmap",
+      "size": 174960
+    },
+    {
+      "name": "Nightshift-0.3.0-x64.zip",
+      "url": "https://github.com/nightshift-app/releases/releases/download/v0.3.0/Nightshift-0.3.0-x64.zip",
+      "size": 186779258
+    },
+    {
+      "name": "Nightshift-0.3.0-x64.zip.blockmap",
+      "url": "https://github.com/nightshift-app/releases/releases/download/v0.3.0/Nightshift-0.3.0-x64.zip.blockmap",
+      "size": 195340
+    },
+    {
+      "name": "Nightshift-0.3.0-x86_64.AppImage",
+      "url": "https://github.com/nightshift-app/releases/releases/download/v0.3.0/Nightshift-0.3.0-x86_64.AppImage",
+      "size": 190609843
+    },
+    {
+      "name": "SHA256SUMS",
+      "url": "https://github.com/nightshift-app/releases/releases/download/v0.3.0/SHA256SUMS",
+      "size": 1396
+    }
+  ]
+}

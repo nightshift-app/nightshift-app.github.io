@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'self'; connect-src 'self' https://api.github.com; base-uri 'none'; form-action 'none'; object-src 'none'"
+    />
+    <title>Nightshift: a software factory for your coding agents</title>
+    <meta
+      name="description"
+      content="Hand Nightshift your work in the evening. Your coding agents plan, build, check and review it overnight, on your computer or on Nightshift Cloud, and you merge in the morning."
+    />
+    <meta name="theme-color" content="#04061a" />
+    <link rel="canonical" href="https://nightshift-app.github.io/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Nightshift" />
+    <meta
+      property="og:description"
+      content="A software factory for Claude Code, Codex, Cursor, OpenCode, Kiro and more. Hand it work tonight, merge in the morning."
+    />
+    <meta property="og:url" content="https://nightshift-app.github.io/" />
+    <meta property="og:image" content="https://nightshift-app.github.io/assets/icon-512.png" />
+    <link rel="icon" href="assets/icon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="assets/icon-512.png" />
+    <link
+      rel="preload"
+      href="assets/fonts/silkscreen-400.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="sky.js" defer></script>
+    <script src="site.js" defer></script>
+  </head>
+  <body>
+    <div class="sky-fallback" aria-hidden="true"></div>
+    <canvas class="pixel-sky" aria-hidden="true"></canvas>
+    <a class="skip" href="#main">Skip to content</a>
+
+    <nav class="rail" data-rail aria-label="Sections">
+      <a href="#top" aria-label="Top">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M10.7 3.1A9 9 0 1 0 20.8 13.7 7.4 7.4 0 0 1 10.7 3.1Z" />
+        </svg>
+      </a>
+      <a href="#factory" aria-label="The factory">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 3 3 8l9 5 9-5-9-5ZM3 13l9 5 9-5" />
+        </svg>
+      </a>
+      <a href="#cloud" aria-label="Nightshift Cloud">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M7 18a4 4 0 0 1-.5-8A6 6 0 0 1 18 9.5 4 4 0 0 1 17.5 18H7Z" />
+        </svg>
+      </a>
+      <a href="#download" aria-label="Download">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M12 4v11m0 0-4-4m4 4 4-4M5 20h14" />
+        </svg>
+      </a>
+    </nav>
+
+    <header class="nav">
+      <a class="brand" href="#top" aria-label="Nightshift home">
+        <img src="assets/icon.svg" alt="" width="28" height="28" />
+        <span>Nightshift</span>
+      </a>
+      <nav class="nav-links" aria-label="Main">
+        <a href="#features">What it does</a>
+        <a href="#factory">Factory</a>
+        <a href="#cloud">Cloud</a>
+        <a href="#faq">FAQ</a>
+        <a class="button small" href="#download">Download</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" id="top">
+        <div class="col hero-inner">
+          <svg
+            class="moon"
+            viewBox="0 0 24 24"
+            width="88"
+            height="88"
+            role="img"
+            aria-label="The Nightshift moon"
+          >
+            <defs>
+              <linearGradient
+                id="moon-fill"
+                x1="4"
+                y1="4"
+                x2="20"
+                y2="21"
+                gradientUnits="userSpaceOnUse"
+              >
+                <stop offset="0" stop-color="#fffbea" />
+                <stop offset="1" stop-color="#f6c768" />
+              </linearGradient>
+            </defs>
+            <path
+              d="M10.733 3.09A9 9 0 1 0 20.845 13.661 7.4 7.4 0 0 1 10.733 3.09Z"
+              fill="url(#moon-fill)"
+            />
+          </svg>
+          <p class="eyebrow rise">
+            <span class="live" aria-hidden="true"></span
+            ><span data-release-badge>Nightshift for desktop</span>
+          </p>
+          <h1 class="display rise d1">Your agents work the night shift.</h1>
+          <p class="lede rise d2">
+            Hand Nightshift your work in the evening. It plans, builds, checks, reviews and prepares
+            the pull request while you sleep. You review and merge in the morning.
+          </p>
+          <div class="actions rise d3">
+            <a class="button" href="#download" data-primary-download>Download Nightshift</a>
+            <a
+              class="button quiet"
+              href="https://github.com/nightshift-app/releases/releases"
+              rel="noopener"
+              data-releases-link
+              >Release notes</a
+            >
+          </div>
+          <p class="fineprint rise d3" data-primary-detail>
+            Free to download. macOS, Windows and Linux.
+          </p>
+        </div>
+      </section>
+
+      <section class="col strip" aria-label="At a glance">
+        <div class="stat">
+          <p class="k">Agents</p>
+          <p class="v">07</p>
+          <p class="n">Claude Code, Codex, Cursor, OpenCode, Kiro, Grok and Antigravity.</p>
+        </div>
+        <div class="stat">
+          <p class="k">Parallel runs</p>
+          <p class="v">03</p>
+          <p class="n">Several tasks move through the factory at the same time.</p>
+        </div>
+        <div class="stat">
+          <p class="k">Your code</p>
+          <p class="v">LOCAL</p>
+          <p class="n">It goes from your machine to your provider and nowhere else.</p>
+        </div>
+      </section>
+
+      <section class="col section" id="features">
+        <p class="eyebrow">What Nightshift does</p>
+        <h2 class="display sm">A night crew for your codebase.</h2>
+        <div class="grid">
+          <article>
+            <h3>Factory runs</h3>
+            <p>
+              A task becomes stages: plan, implement, check, review, ship. Each stage is an ordinary
+              thread you can open and steer.
+            </p>
+          </article>
+          <article>
+            <h3>Checks on every change</h3>
+            <p>
+              oxlint, Knip, gitleaks, OSV-Scanner, Semgrep and more run after each implementation
+              stage. Each tool has its own switch.
+            </p>
+          </article>
+          <article>
+            <h3>A second opinion</h3>
+            <p>
+              The reviewer can run on a different model than the implementer, and its findings go
+              back to the implementer automatically.
+            </p>
+          </article>
+          <article>
+            <h3>Board and away mode</h3>
+            <p>
+              A Kanban board of every thread by status. Queue follow-ups while an agent is busy or
+              while you are away, and they run in order.
+            </p>
+          </article>
+          <article>
+            <h3>Runtime proof</h3>
+            <p>Gates check that a change actually runs, not just that it compiles.</p>
+          </article>
+          <article>
+            <h3>Nightshift Cloud</h3>
+            <p>
+              Move a thread to your own cloud machine with <code>/cloud</code> and bring it back
+              with <code>/local</code>. Close the laptop, the agents keep working.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="col section split" id="factory">
+        <div class="copy">
+          <p class="eyebrow">The factory</p>
+          <h2 class="display sm">From a task to a pull request.</h2>
+          <p class="lede">
+            Give the factory a task and it walks it through five stages. Skills and tools are set up
+            for each stage, agents hand work to subagents, and every check has a clear verdict you
+            can read in the morning.
+          </p>
+          <ol class="steps">
+            <li><b>Plan.</b> The task becomes a plan. Approve it or let the factory go.</li>
+            <li><b>Implement.</b> An agent changes the code in its own worktree.</li>
+            <li><b>Check.</b> Linters, scanners and runtime gates run on the result.</li>
+            <li><b>Review.</b> A reviewer reads the diff and sends findings back.</li>
+            <li><b>Ship.</b> Nightshift opens the pull request. You merge.</li>
+          </ol>
+        </div>
+        <figure class="panel" aria-label="Illustration of a factory run">
+          <div class="panel-head">
+            <span class="label">Run 0412</span>
+            <span class="pill running">Running</span>
+          </div>
+          <p class="panel-title">Fix login redirect for expired sessions</p>
+          <div class="meters">
+            <div class="meter-row">
+              <span>Plan</span><span class="seg w100"><i></i></span
+              ><span class="pill safe">Done</span>
+            </div>
+            <div class="meter-row">
+              <span>Implement</span><span class="seg w100"><i></i></span
+              ><span class="pill safe">Done</span>
+            </div>
+            <div class="meter-row">
+              <span>Check</span><span class="seg w100"><i></i></span
+              ><span class="pill review">2 findings</span>
+            </div>
+            <div class="meter-row">
+              <span>Review</span><span class="seg w60"><i></i></span
+              ><span class="pill running">Running</span>
+            </div>
+            <div class="meter-row">
+              <span>Ship</span><span class="seg w0"><i></i></span
+              ><span class="pill queued">Queued</span>
+            </div>
+          </div>
+          <div class="panel-foot">
+            <div><span class="label">Checks</span><span class="num">14</span></div>
+            <div><span class="label">Clean</span><span class="num">11</span></div>
+            <div><span class="label">Caution</span><span class="num warn">01</span></div>
+          </div>
+          <figcaption class="caption">An illustration, not a screenshot.</figcaption>
+        </figure>
+      </section>
+
+      <section class="col section split flip" id="cloud">
+        <figure class="panel term" aria-label="Illustration of moving a thread to Nightshift Cloud">
+          <div class="panel-head">
+            <span class="label">Thread</span>
+            <span class="pill safe">Nightshift Cloud</span>
+          </div>
+          <pre><code><span class="dim">you</span>   /cloud
+<span class="dim">app</span>   Moving this thread to Nightshift Cloud
+<span class="dim">app</span>   <span class="ok">Done.</span> Agents keep working if you close the lid.
+
+<span class="dim">you</span>   /local
+<span class="dim">app</span>   <span class="ok">Back on this computer.</span></code></pre>
+          <figcaption class="caption">An illustration, not a screenshot.</figcaption>
+        </figure>
+        <div class="copy">
+          <p class="eyebrow">Nightshift Cloud</p>
+          <h2 class="display sm">A second computer that is always yours.</h2>
+          <p class="lede">
+            Nightshift Cloud runs in your own AWS account, keeps your projects and sign-ins on its
+            own disk, sleeps when nothing is running and wakes from any device.
+          </p>
+          <ul class="ticks">
+            <li>
+              Type <code>/cloud</code> to continue a thread there and <code>/local</code> to bring
+              it home.
+            </li>
+            <li>A sleeping machine is woken for you, with progress shown while it starts.</li>
+            <li>Your code and prompts stay between your machines and your providers.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="col section" id="agents">
+        <p class="eyebrow">Bring your own agent</p>
+        <h2 class="display sm">Works with the agents you already use.</h2>
+        <ul class="pills">
+          <li>Claude Code</li>
+          <li>Codex</li>
+          <li>Cursor CLI</li>
+          <li>OpenCode</li>
+          <li>Kiro CLI</li>
+          <li>Grok Build</li>
+          <li>Antigravity</li>
+        </ul>
+        <p class="muted">
+          Every agent is listed on first launch. Install and sign in from the setup screen, or later
+          from Settings. Nightshift uses your own subscriptions.
+        </p>
+      </section>
+
+      <section class="col section" id="download" data-section-download>
+        <p class="eyebrow">Download</p>
+        <h2 class="display sm">Take it for a night.</h2>
+        <p class="muted" data-release-summary>Checking the latest release&hellip;</p>
+        <div class="downloads">
+          <a
+            class="download"
+            data-asset="mac-arm64"
+            href="https://github.com/nightshift-app/releases/releases/latest"
+            rel="noopener"
+          >
+            <strong>macOS</strong><span>Apple silicon (.dmg)</span
+            ><small data-note>Latest release</small>
+          </a>
+          <a
+            class="download"
+            data-asset="mac-x64"
+            href="https://github.com/nightshift-app/releases/releases/latest"
+            rel="noopener"
+          >
+            <strong>macOS (Intel)</strong><span>Intel Macs (.dmg)</span
+            ><small data-note>Latest release</small>
+          </a>
+          <a
+            class="download"
+            data-asset="win-x64"
+            href="https://github.com/nightshift-app/releases/releases/latest"
+            rel="noopener"
+          >
+            <strong>Windows</strong><span>64-bit installer (.exe)</span
+            ><small data-note>Latest release</small>
+          </a>
+          <a
+            class="download"
+            data-asset="win-arm64"
+            href="https://github.com/nightshift-app/releases/releases/latest"
+            rel="noopener"
+            hidden
+          >
+            <strong>Windows (ARM)</strong><span>ARM64 installer (.exe)</span
+            ><small data-note>Latest release</small>
+          </a>
+          <a
+            class="download"
+            data-asset="linux-x64"
+            href="https://github.com/nightshift-app/releases/releases/latest"
+            rel="noopener"
+          >
+            <strong>Linux</strong><span>x64 AppImage</span><small data-note>Latest release</small>
+          </a>
+          <a
+            class="download"
+            data-asset="linux-arm64"
+            href="https://github.com/nightshift-app/releases/releases/latest"
+            rel="noopener"
+            hidden
+          >
+            <strong>Linux (ARM)</strong><span>ARM64 AppImage</span
+            ><small data-note>Latest release</small>
+          </a>
+        </div>
+        <p class="muted small-print">
+          <a
+            data-release-link
+            href="https://github.com/nightshift-app/releases/releases/latest"
+            rel="noopener"
+            >Release notes and every file</a
+          >
+          &middot; Checksums are in <code>SHA256SUMS</code> on the release.
+        </p>
+        <details class="notes">
+          <summary>First launch on macOS or Windows</summary>
+          <p>
+            Early builds are not signed yet. On macOS, if the app is reported as damaged, run
+            <code>xattr -cr /Applications/Nightshift.app</code> once, then open it. On Windows,
+            choose <em>More info</em>, then <em>Run anyway</em> in the SmartScreen prompt.
+          </p>
+          <p>Once installed, the app updates itself from the same release feed.</p>
+        </details>
+      </section>
+
+      <section class="col section" id="start">
+        <p class="eyebrow">Get started</p>
+        <h2 class="display sm">Four steps to the first night.</h2>
+        <ol class="steps numbered">
+          <li>Download and install Nightshift for your system.</li>
+          <li>Open it. The setup screen lists every supported agent.</li>
+          <li>Install and sign in to at least one agent from that screen.</li>
+          <li>Add a project, then start a thread or hand the factory a task.</li>
+        </ol>
+      </section>
+
+      <section class="col section" id="faq">
+        <p class="eyebrow">Questions</p>
+        <h2 class="display sm">Good to know.</h2>
+        <div class="faq">
+          <details>
+            <summary>Do I need a subscription?</summary>
+            <p>
+              Nightshift drives the coding agents you already have, with your own sign-in. Their
+              usage is billed by their providers. Nightshift is free to download and use.
+            </p>
+          </details>
+          <details>
+            <summary>Where does my code go?</summary>
+            <p>
+              From your machine to the provider of the agent you chose. Nightshift keeps its state
+              on your disk. With Nightshift Cloud, work runs on a machine in your own AWS account.
+            </p>
+          </details>
+          <details>
+            <summary>Where does Nightshift come from?</summary>
+            <p>
+              Nightshift is built on
+              <a href="https://github.com/pingdotgg/t3code" rel="noopener">T3 Code</a>
+              and released under the MIT license. The factory, Nightshift Cloud and the night-sky
+              look are Nightshift's own.
+            </p>
+          </details>
+          <details>
+            <summary>Does it update itself?</summary>
+            <p>Yes. The installed app checks the release feed and offers new versions.</p>
+          </details>
+        </div>
+      </section>
+    </main>
+
+    <footer class="col foot">
+      <p>
+        <img src="assets/wordmark.svg" alt="Nightshift" width="156" height="17" />
+      </p>
+      <p>
+        Built on <a href="https://github.com/pingdotgg/t3code" rel="noopener">T3 Code</a>, MIT
+        license.
+      </p>
+      <p>
+        <a
+          href="https://github.com/nightshift-app/releases/releases"
+          rel="noopener"
+          data-releases-link
+          >Releases</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>

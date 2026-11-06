@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1024" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#070B1F"/>
+      <stop offset="1" stop-color="#1C2756"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="481.28" cy="542.72" r="491.52" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#3B4C9B" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#3B4C9B" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="moon" x1="4" y1="4" x2="20" y2="21" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#FFFBEA"/>
+      <stop offset="1" stop-color="#F6C768"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12.288" stdDeviation="18.432" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+  <g>
+    <rect x="0" y="0" width="1024" height="1024" rx="228" fill="url(#sky)"/>
+    <rect x="0" y="0" width="1024" height="1024" rx="228" fill="url(#glow)"/>
+    <g transform="translate(0 0)">
+      <path opacity="0.95" fill="#FFFFFF" d="M720 204C730.12 239.88 730.12 239.88 766 250C730.12 260.12 730.12 260.12 720 296C709.88 260.12 709.88 260.12 674 250C709.88 239.88 709.88 239.88 720 204Z"/>
+      <path opacity="0.75" fill="#FFFFFF" d="M812 396C817.28 414.72 817.28 414.72 836 420C817.28 425.28 817.28 425.28 812 444C806.72 425.28 806.72 425.28 788 420C806.72 414.72 806.72 414.72 812 396Z"/>
+      <path opacity="0.6" fill="#FFFFFF" d="M610 149C613.52 161.48 613.52 161.48 626 165C613.52 168.52 613.52 168.52 610 181C606.48 168.52 606.48 168.52 594 165C606.48 161.48 606.48 161.48 610 149Z"/>
+      <path opacity="0.35" fill="#FFFFFF" d="M250 806C253.08 816.92 253.08 816.92 264 820C253.08 823.08 253.08 823.08 250 834C246.92 823.08 246.92 823.08 236 820C246.92 816.92 246.92 816.92 250 806Z"/>
+      <path transform="translate(178 202) scale(27)" d="M10.733 3.090A9 9 0 1 0 20.845 13.661A7.4 7.4 0 0 1 10.733 3.090Z" fill="url(#moon)"/>
+    </g>
+    <rect x="0.5" y="0.5" width="1023" height="1023" rx="228" fill="none" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="3"/>
+  </g></svg>
